@@ -4,8 +4,6 @@
 cite about-plugin
 about-plugin 'load fzf, if you are using it'
 
-_command_exists fzf || return
-
 if [ -r ~/.fzf.bash ] ; then
   source ~/.fzf.bash
 elif [ -r "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash ] ; then
