@@ -15,4 +15,4 @@ d() {
 
 # Complete d like docker
 _completion_loader docker 2>/dev/null
-eval $(complete -p docker | sed 's/ docker$/ d/g')
+eval $(complete -p docker 2>/dev/null | sed 's/ docker$/ d/g')

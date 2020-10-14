@@ -17,4 +17,4 @@ g() {
 
 # Complete g like git
 _completion_loader git 2>/dev/null
-eval $(complete -p git | sed 's/ git$/ g/g')
+eval $(complete -p git 2>/dev/null | sed 's/ git$/ g/g')
